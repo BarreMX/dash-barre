@@ -1,0 +1,234 @@
+/* Prealoder */
+.login-preloader {
+  display: none;
+}
+.lds-dual-ring {
+  position: absolute;
+  right: 31%;
+  width: 30px;
+  height: 30px;
+  top: 6px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 26px;
+  height: 25px;
+  margin: 0px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Breadcumbs */
+.page-title,
+.breadcrumb-item.active {
+  text-transform: capitalize;
+}
+/* Cards */
+.card-title {
+  text-transform: capitalize;
+}
+/* Calendario */
+.fc-event {
+  border: 0px solid #3788d8!important;
+}
+/* New Event */
+input[type="color"] {
+  padding: 0;
+  border: solid 0px #000!important;
+  height: 40px;
+  border-radius: 0px;
+}
+.btn {
+  margin-right: 10px;
+}
+/* Alerts */
+.swal2-popup {
+  background-color: #fff!important;
+}
+.swal2-title {
+  color: #000!important;
+  font-weight: 700!important;
+}
+.page-preloader {
+  position: relative;
+  padding: 25px 0px;
+}
+/* Page Preloader */
+.page-preloader .lds-dual-ring {
+  position: relative;
+  right: 0%;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+.page-preloader .lds-dual-ring:after {
+  width: 100px;
+  height: 100px;
+  border: 6px solid #cb6721;
+  border-color: #cb6721 transparent #cb6721 transparent;
+}
+/* Copy Message */
+div#datatables_buttons_info {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 999999999;
+}
+#datatable-buttons_wrapper .btn {
+  margin-right: 0px;
+}
+.fc-right .btn {
+  margin-right: 0px;
+}
+.fc-left .btn {
+  margin-right: 0px;
+}
+.fc-day-header {
+  text-transform: capitalize;
+}
+.text-primary {
+  color: #cb6721!important;
+}
+.all-tapetes {
+  width: 100%;
+}
+.all-tapetes a {
+  width: 13%;
+  display: inline-block;
+  text-align: center;
+}
+.all-tapetes a img {
+  width: 75%;
+}
+.center-tapete {
+  width: 100%;
+  padding: 25px 0px;
+  text-align: right;
+}
+/* Preloader */
+.loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7px;
+  background-color: transparent;
+  overflow: hidden;
+  z-index: 999999;
+}
+.loading-bar--active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 5px;
+  background-color: #cb6721;
+  box-shadow: 10px 0 30px 15px #cb6721, -10px 0 30px 15px #cb6721;
+  animation: moveLoadBar 1.5s cubic-bezier(0.09, 0.89, 0.7, 0.71) infinite;
+}
+
+@keyframes moveLoadBar {
+  0% {
+    left: -10%;
+  }
+  100% {
+    left: 110%;
+  }
+}
+#page-user-role {
+  text-transform: capitalize;
+}
+.tapetes-header {
+  width: 100%;
+  display: block;
+  padding: 0px 0px;
+}
+.tapetes-col {
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 200px;
+}
+.tapetes-col label {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.tapetes-col input {
+  width: 100px;
+  border-radius: 0px;
+  height: 30px;
+  border: solid 1px #000;
+  text-align: center;
+  display: inline-block;
+}
+.tapetes-col input::-webkit-outer-spin-button,
+.tapetes-col input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+.tapetes-col input[type=number] {
+  -moz-appearance: textfield;
+}
+.tapetes-col input:focus {
+  outline: none;
+}
+#tapetes {
+  min-height: 500px;
+}
+.tapete-card {
+  width: 95%;
+  margin: auto;
+  padding-bottom: 20px;
+  position: relative;
+}
+.tapete-card img {
+  width: 100%;
+}
+.tapete-actions {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba( 0, 0, 0, .5 );
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.tapete-card:hover > .tapete-actions {
+  display: flex;
+}
+.tapete-actions span {
+  color: #fff;
+  font-size: 22px;
+  padding: 0px 10px 16px 10px;
+  cursor: pointer;
+}
+.tapete-empty {
+  width: 100%;
+  margin: auto;
+  min-height: 200px;
+  clip-path: inset(0 round 4px 0 0px 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: dashed 1px #000;
+}
+.tapete-empty span {
+  cursor: pointer;
+}
+.tapete-empty span:first-child {
+  padding-right: 10px;
+}
